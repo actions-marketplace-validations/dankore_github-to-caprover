@@ -119,4 +119,8 @@ Deploy using an image from Google Container Registry:
 - **Sensitive Data:** Always use GitHub Secrets to store sensitive information such as the server URL, password, and app name to ensure security.
 - **Access Control:** Limit access to the repository containing this workflow to trusted collaborators only.
 
+## CapRover CLI pin
+
+This action installs **`caprover@2.3.1`**. CapRover CLI **`2.4.0+`** crashes on load because Commander rejects a duplicate short flag (`-t` used by both `--tarFile` and `--appToken`). Keep the pin until upstream ships a fix.
+
 For further details on setting up and managing deployments with CapRover, consult the [CapRover documentation](https://caprover.com/).
